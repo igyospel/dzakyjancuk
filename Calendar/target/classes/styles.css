@@ -1,0 +1,150 @@
+.root {
+    -fx-background-color: #050505;
+    /* Deep black */
+    -fx-font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+}
+
+.main-background {
+    -fx-background-color: transparent;
+}
+
+/* Calendar Pane */
+.month-year-label {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: 900;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.3), 10, 0, 0, 0);
+}
+
+.nav-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: 800;
+    -fx-background-radius: 50;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 229, 255, 0.4), 10, 0, 0, 0);
+}
+
+.day-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.03);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-alignment: top-left;
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+    -fx-border-radius: 12;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.day-cell:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+}
+
+.selected-day-cell {
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.4), 10, 0, 0, 0);
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+}
+
+.selected-day-cell:hover {
+    -fx-border-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.5), 15, 0, 0, 0);
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.current-day-cell {
+    -fx-border-color: #F8FF9C;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(248, 255, 156, 0.5), 15, 0, 0, 0);
+    -fx-background-color: rgba(248, 255, 156, 0.1);
+}
+
+/* side details */
+.details-pane {
+    -fx-padding: 70 0 0 20;
+    -fx-background-color: rgba(255, 255, 255, 0.02);
+    -fx-background-radius: 20;
+}
+
+.detail-day-label {
+    -fx-text-fill: #FF9100;
+    -fx-font-size: 32px;
+    -fx-font-weight: 900;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 145, 0, 0.4), 10, 0, 0, 0);
+}
+
+.detail-date-label {
+    -fx-text-fill: rgba(255, 255, 255, 0.6);
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 0 0 20 0;
+}
+
+.event-scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.event-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.event-card {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-padding: 15;
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 12;
+}
+
+.event-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+.event-time {
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+}
+
+.delete-button {
+    -fx-background-color: rgba(255, 82, 82, 0.2);
+    /* Soft Red */
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-border-color: rgba(255, 82, 82, 0.3);
+    -fx-border-radius: 10;
+}
+
+.delete-button:hover {
+    -fx-background-color: rgba(255, 82, 82, 0.4);
+    -fx-border-color: #FF5252;
+}
+
+.add-event-button {
+    -fx-background-color: #111111;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-padding: 12 30;
+    -fx-background-radius: 6;
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
